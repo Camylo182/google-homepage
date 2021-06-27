@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>Google Homepage Replica Project</title>
+        
+        <link rel= "stylesheet" href= "https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <style>
+/* START - STYLE of the TOP navigation bar */
+        #top-ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #top-navbar {
+            display: inline-block;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        .left-li-top-navbar {
+            float: left;
+        }
+
+        .material-icons {
+            float: right;
+        }
+
+        .right-li-top-navbar {
+            float: right;
+        }
+
+        #top-navbar a {
+            display: inline-block;
+            padding: 8px;
+            margin: 0;
+            color: #808080;
+            text-decoration: none;
+        }
+/* END - STYLE of the TOP navigation bar */
+
+/* START - STYLE of the SIGN IN button */
+        #sign-in-button {
+            float: right;
+        }
+/* END - STYLE of the SIGN IN button */
+
+/* START - STYLE of the Google Search Tool */
+    /* Center Ver. and Horiz. Google Search Tool */
+        html, body {
+            height: 100%;            
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .google-search-tool {
+            width: 500px;
+            margin: 5px;
+            text-align: center;
+        }
+    /* Center Ver. and Horiz. Google Search Tool */
+/* END - STYLE of the Google Search Tool */
+
+/* START - STYLE of the BOTTOM navigation bar */
+        #bottom-ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }  
+    
+        #bottom-navbar {
+            display: inline-block;
+            width:100%; 
+            position: fixed;
+            bottom: 0;
+        }
+
+        .left-li-bottom-navbar {
+            float: left;   
+        }
+
+        .right-li-bottom-navbar {
+            float: right;
+        }
+
+        #bottom-navbar a {
+            display: inline-block;
+            padding: 8px;
+            color: #808080;
+            text-decoration: none;
+        }
+/* END - STYLE of the BOTTOM navigation bar */
+        </style>
+
+    </head> 
+<body> 
+<div class= "container">
+<!-- START - STRUCTURE of the Google Search Tool -->
+        <main>
+            <div class= "google-search-tool">
+                <h1>Google</h1>
+                <input type= "search" name= "search_bar"> 
+                <br>
+                <br>
+                <button>Google Search</button> 
+                <button>I'm Feeling Lucky</button>
+            </div>
+        </main>
+<!-- ENDS - STRUCTURE of the Google Search Tool -->
+
+<!-- START - STRUCTURE of the TOP navigation bar -->
+    <div id= "top-navbar">
+        <!-- Sign in Button -->
+        <button id= "sign-in-button" type="button">Sign in</button>
+        <!-- Sign in Button -->
+        <!-- Google Apps Icon -->
+        <i class= "material-icons">apps</i>    
+        <!-- Google Apps Icon -->
+        <ul id= "top-ul"> 
+            <li class= "left-li-top-navbar"><a href= "">About</a></li>
+            <li class= "left-li-top-navbar"><a href= "">Store</a></li>
+            <li class= "right-li-top-navbar"><a href= "">Images</a></li>
+            <li class= "right-li-top-navbar"><a hfer= "">Gmail</a></li>
+        </ul>
+    </div>
+<!-- END - STRUCTURE of the TOP navigation bar -->
+
+<!-- START - STRUCTURE of the BOTTOM navigation bar -->
+    <div id= "bottom-navbar">
+        <ul id= "bottom-ul">
+            <li class= "left-li-bottom-navbar"><a href= "">Advertising</a></li> 
+            <li class= "left-li-bottom-navbar"><a href= "">Business</a></li>
+            <li class= "left-li-bottom-navbar"><a href= "">How Search works</a></li>
+            <li class= "right-li-bottom-navbar"><a href= "">Privacy</a></li> 
+            <li class= "right-li-bottom-navbar"><a href= "">Terms</a></li> 
+            <li class= "right-li-bottom-navbar"><a href= "">Settings</a></li>
+        </ul>
+    </div>
+<!-- END - STRUCTURE of the BOTTOM navigation bar -->
+</div>
+</body>
+</html>
