@@ -18,7 +18,7 @@
             display: inline-block;
             width: 100%;
             position: fixed;
-            top: 0;
+            top: 15px;
         }
 
         .left-li-top-navbar {
@@ -37,8 +37,10 @@
             display: inline-block;
             padding: 8px;
             margin: 0;
-            color: #808080;
+            color: #3f3f3f;
             text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
         }
 /* END - STYLE of the TOP navigation bar */
 
@@ -66,18 +68,101 @@
             align-items: center;
         }
 
-        .google-search-tool {
+        #google-search-tool {
             width: 500px;
             margin: 5px;
             text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
+        @font-face {
+            font-family: 'Product Sans';
+            font-style: 'normal';
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), 
+            url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+            format('woff2');
+        }
+
+        #google-logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 0px;
+            align-items: center;
+            font-family: 'Product Sans';
+            font-size: 81px;
+            font-weight: 700;
+            padding: 50px;
+            margin: 10px;
+        }
+
+        #search-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        #search-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #google-search-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        #feeling-lucky-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        span:nth-child(1) {
+            color: #4285f4;
+            font-size: 90px;
+        }
+
+        span:nth-child(2) {
+            color: #EA4335;
+        }
+
+        span:nth-child(3) {
+            color: #FBBC05;
+        }
+
+        span:nth-child(4) {
+            color: #4285f4;
+        }
+
+        span:nth-child(5) {
+            color: #34A853;
+        }
+
+        span:nth-child(6) {
+            color: #EA4335;
+        }
+
     /* Center Ver. and Horiz. Google Search Tool */
 /* END - STYLE of the Google Search Tool */
 
 /* START - STYLE of the BOTTOM navigation bar */
         #bottom-ul {
             list-style-type: none;
-            padding: 0;
+            padding: 6px;
             margin: 0;
             background-color: #f4f4f4;
             overflow: hidden;
@@ -88,6 +173,7 @@
             width:100%; 
             position: fixed;
             bottom: 0;
+            padding:0;
         }
 
         .left-li-bottom-navbar {
@@ -101,8 +187,10 @@
         #bottom-navbar a {
             display: inline-block;
             padding: 8px;
-            color: #808080;
+            color: #646464;
             text-decoration: none;
+            font-family: Arial, Helvetica, Sans-serif;
+            font-size: 14px;
         }
 /* END - STYLE of the BOTTOM navigation bar */
         </style>
@@ -111,16 +199,25 @@
 <body> 
 <div class= "container">
 <!-- START - STRUCTURE of the Google Search Tool -->
-        <main>
-            <div class= "google-search-tool">
-                <h1>Google</h1>
-                <input type= "search" name= "search_bar"> 
-                <br>
-                <br>
-                <button>Google Search</button> 
-                <button>I'm Feeling Lucky</button>
+    <main>
+        <div id= "google-search-tool">
+            <div id= "google-logo">
+                <span id= "uppercase-letter-g">G</span><span id= "1st-letter-o">o</span>
+                <span id= "2nd-letter-o">o</span><span id= "lowercase-letter-g">g</span>
+                <span id= "letter-l">l</span><span id= "letter-e">e</span>
             </div>
-        </main>
+                <br>
+                    <div id= "search-bar">
+                        <input type= "search" name= "search_bar"> 
+                    </div>
+                <br>
+                <br>
+                    <div id= "search-buttons">
+                        <div id= "google-search-button"><button>Google Search</button></div>
+                        <div id= "feeling-lucky-button"><button>I'm Feeling Lucky</button></div>
+                    </div>
+        </div>
+    </main>
 <!-- ENDS - STRUCTURE of the Google Search Tool -->
 
 <!-- START - STRUCTURE of the TOP navigation bar -->
