@@ -6,7 +6,7 @@
         <link rel= "stylesheet" href= "https://fonts.googleapis.com/icon?family=Material+Icons">
         
         <style>
-/* START - STYLE of the TOP navigation bar */
+/* BEGINS - TOP navigation bar */
         #top-ul {
             list-style-type: none;
             padding: 0;
@@ -21,43 +21,67 @@
             top: 15px;
         }
 
-        .left-li-top-navbar {
-            float: left;
+        #about-top-link {
+            position: fixed;
+            top: 15px;
+            left: 17px;
         }
 
-        .material-icons {
-            float: right;
+        #store-top-link {
+            position: fixed;
+            top: 15px;
+            left: 69.5px;
         }
 
-        .right-li-top-navbar {
-            float: right;
+        #gmail-top-link {
+            position: fixed;
+            top: 16px;
+            right: 209px;
+        }
+
+        #images-top-link {
+            position: fixed;
+            top: 16px;
+            right:151px;
+        }
+
+        #apps-icon {
+            position: fixed;
+            right: 117px;
+            top: 19px;
+            font-size: 24px;
+            color:rgba(80, 80, 80, 0.89)
+        }
+
+        #sign-in-button {
+            position: fixed;
+            top: 16px;
+            right: 30px;
+            padding: 7.5px 13px;
+            border: none;
+            background-color: rgb(85, 125, 248);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: 950;
         }
 
         #top-navbar a {
             display: inline-block;
             padding: 8px;
             margin: 0;
-            color: #3f3f3f;
+            color: #303030;
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 13px;
         }
-/* END - STYLE of the TOP navigation bar */
+/* ENDS - TOP navigation bar */
 
-/* START - STYLE of the SIGN IN button */
-        #sign-in-button {
-            float: right;
-        }
-/* END - STYLE of the SIGN IN button */
 
-/* START - STYLE of the Google Search Tool */
-    /* Center Ver. and Horiz. Google Search Tool */
+/* BEGINS - Google Search Tool */
         html, body {
-            height: 100%;            
-        }
-
-        body {
-            margin: 0;
+            height: 100%;
+            margin: 0;            
         }
 
         .container {
@@ -72,6 +96,9 @@
             width: 500px;
             margin: 5px;
             text-align: center;
+            position: fixed;
+            top: 110px;
+            left: 390px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
@@ -96,20 +123,88 @@
             align-items: center;
             font-family: 'Product Sans';
             font-size: 81px;
-            font-weight: 700;
-            padding: 50px;
-            margin: 10px;
+            font-weight: 600;
+            padding: 60px;
+            margin: 20px;
         }
 
         #search-bar {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 10px;
-            margin: 0px;
+            border: 1px solid rgba(199, 199, 199, 0.5);
+            border-radius: 25px;
+            height: 45px;
+            width: 549px;
+            position: relative;
+            padding-left: 30px;
+            background-size: 15px;
+            background-repeat: no-repeat;
+            transition: box-shadow .0,5s;
+        }
+
+        #search-bar input {
+            border: none;
+            border-radius: 25px;
+            display: block;
+            width: 94%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color:rgb(50, 50, 50);
+        }
+
+        input:focus {
+            outline: none; 
+        }
+
+        #search-bar:hover {
+            box-shadow: 0 0 5px rgba(33, 33, 33, .2);
+        }
+
+        #search-icon {
+            position: absolute;
+            top: 12px;
+            left: 14px;
+            color:rgb(165, 165, 165);
+        }
+
+        #mic-icon {
+            position: absolute;
+            top: 11px;
+            right: 16px;
+            font-size: 25px;
+            color: royalblue;
+        }
+
+        @font-face {
+            font-family: material-icons;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://example.com/MaterialIcons-Regular.eot);
+            src: local('Material Icons'), local('MaterialIcons-Regular'),
+            url(https://example.com/MaterialIcons-Regular.woff2), format('woff2'),
+            url(https://example.com/MaterialIcons-Regular.woff), format('woff'),
+            url(https://example.com/MaterialIcons-Regular.ttf), format('truetype');
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         #search-buttons {
+            position: relative;
+            top: 4px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -118,18 +213,53 @@
         }
 
         #google-search-button {
+            background-color: #f3f2f2;
+            border: hidden;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+           border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #636363;
+            transition-property: border, background-color, color;
+            transition-duration: 0,01s;
+        }
+
+        #google-search-button:hover {
+            border: 1px solid rgb(187, 187, 187);
+            background-color: rgb(247, 247, 247);
+            color: rgb(50, 50, 50);
         }
 
         #feeling-lucky-button {
+            background-color: #f3f2f2;
+            border: hidden;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(99, 99, 99);
+            transition-property: border, background-color, color; 
+            transition-duration: 0,01s;
         }
+
+        #feeling-lucky-button:hover {
+            border: 1px solid rgb(187, 187, 182);
+            background-color: rgb(247, 247, 247);
+            color: rgb(50, 50, 50);
+        }
+        
 
         span:nth-child(1) {
             color: #4285f4;
@@ -155,33 +285,61 @@
         span:nth-child(6) {
             color: #EA4335;
         }
+/* ENDS - Google Search Tool */
 
-    /* Center Ver. and Horiz. Google Search Tool */
-/* END - STYLE of the Google Search Tool */
-
-/* START - STYLE of the BOTTOM navigation bar */
+/* BEGINS - BOTTOM navigation bar */
         #bottom-ul {
             list-style-type: none;
             padding: 6px;
             margin: 0;
-            background-color: #f4f4f4;
             overflow: hidden;
         }  
     
         #bottom-navbar {
             display: inline-block;
+            height: 39px;
+            background-color:rgb(241, 241, 241);
             width:100%; 
             position: fixed;
             bottom: 0;
             padding:0;
+            border: 1px solid rgb(228, 228, 228);
         }
 
-        .left-li-bottom-navbar {
-            float: left;   
+        #advertising-bottom-link {
+            Position: fixed;
+            bottom: 4px;
+            left: 22px;  
         }
 
-        .right-li-bottom-navbar {
-            float: right;
+        #business-bottom-link {
+            position: fixed;  
+            bottom: 4px;
+            left: 118.5px;
+        }
+
+        #how-bottom-link {
+            position: fixed;  
+            bottom: 4px;
+            left: 202px;
+        }
+
+        #privacy-bottom-link {
+            position: fixed;  
+            bottom: 4px;
+            right: 165px;
+        }
+
+        #terms-bottom-link {
+            position: fixed;  
+            bottom: 4px;
+            right: 99.5px;
+        }
+
+        #settings-bottom-link {
+            position: fixed;  
+            bottom: 4px;
+            right: 22px;
         }
 
         #bottom-navbar a {
@@ -192,13 +350,13 @@
             font-family: Arial, Helvetica, Sans-serif;
             font-size: 14px;
         }
-/* END - STYLE of the BOTTOM navigation bar */
+/* ENDS - BOTTOM navigation bar */
         </style>
 
     </head> 
 <body> 
 <div class= "container">
-<!-- START - STRUCTURE of the Google Search Tool -->
+<!-- BEGINS - STRUCTURE of Google Search Tool -->
     <main>
         <div id= "google-search-tool">
             <div id= "google-logo">
@@ -207,48 +365,46 @@
                 <span id= "letter-l">l</span><span id= "letter-e">e</span>
             </div>
                 <br>
-                    <div id= "search-bar">
-                        <input type= "search" name= "search_bar"> 
-                    </div>
+                <div id= "search-bar">
+                    <input type= "search" name= "search_bar">
+                    <span id= "search-icon" class= "material-icons">search</span>
+                    <span id= "mic-icon" class= "material-icons">mic</span>
+                </div>
                 <br>
                 <br>
                     <div id= "search-buttons">
-                        <div id= "google-search-button"><button>Google Search</button></div>
-                        <div id= "feeling-lucky-button"><button>I'm Feeling Lucky</button></div>
+                        <div><button id= "google-search-button">Google Search</button></div>
+                        <div><button id= "feeling-lucky-button">I'm Feeling Lucky</button></div>
                     </div>
         </div>
     </main>
-<!-- ENDS - STRUCTURE of the Google Search Tool -->
+<!-- ENDS - STRUCTURE of Google Search Tool -->
 
-<!-- START - STRUCTURE of the TOP navigation bar -->
+<!-- BEGINS - STRUCTURE of TOP navigation bar -->
     <div id= "top-navbar">
-        <!-- Sign in Button -->
-        <button id= "sign-in-button" type="button">Sign in</button>
-        <!-- Sign in Button -->
-        <!-- Google Apps Icon -->
-        <i class= "material-icons">apps</i>    
-        <!-- Google Apps Icon -->
+        <button id= "sign-in-button" type="button">Sign in</button> <!-- Sign in Button -->
+        <i id= "apps-icon" class= "material-icons">apps</i> <!-- Google Apps Icon -->
         <ul id= "top-ul"> 
-            <li class= "left-li-top-navbar"><a href= "">About</a></li>
-            <li class= "left-li-top-navbar"><a href= "">Store</a></li>
-            <li class= "right-li-top-navbar"><a href= "">Images</a></li>
-            <li class= "right-li-top-navbar"><a hfer= "">Gmail</a></li>
+            <li id= "about-top-link"><a href= "">About</a></li>
+            <li id= "store-top-link"><a href= "">Store</a></li>
+            <li id= "images-top-link"><a href= "">Images</a></li>
+            <li id= "gmail-top-link"><a hfer= "">Gmail</a></li>
         </ul>
     </div>
-<!-- END - STRUCTURE of the TOP navigation bar -->
+<!-- ENDs - STRUCTURE of TOP navigation bar -->
 
-<!-- START - STRUCTURE of the BOTTOM navigation bar -->
+<!-- BEGINS - STRUCTURE of BOTTOM navigation bar -->
     <div id= "bottom-navbar">
         <ul id= "bottom-ul">
-            <li class= "left-li-bottom-navbar"><a href= "">Advertising</a></li> 
-            <li class= "left-li-bottom-navbar"><a href= "">Business</a></li>
-            <li class= "left-li-bottom-navbar"><a href= "">How Search works</a></li>
-            <li class= "right-li-bottom-navbar"><a href= "">Privacy</a></li> 
-            <li class= "right-li-bottom-navbar"><a href= "">Terms</a></li> 
-            <li class= "right-li-bottom-navbar"><a href= "">Settings</a></li>
+            <li id= "advertising-bottom-link"><a href= "">Advertising</a></li> 
+            <li id= "business-bottom-link"><a href= "">Business</a></li>
+            <li id= "how-bottom-link"><a href= "">How Search works</a></li>
+            <li id= "privacy-bottom-link"><a href= "">Privacy</a></li> 
+            <li id= "terms-bottom-link"><a href= "">Terms</a></li> 
+            <li id= "settings-bottom-link"><a href= "">Settings</a></li>
         </ul>
     </div>
-<!-- END - STRUCTURE of the BOTTOM navigation bar -->
+<!-- ENDS - STRUCTURE of the BOTTOM navigation bar -->
 </div>
 </body>
 </html>
